@@ -16,8 +16,8 @@ load_dotenv()
 
 # 환경 변수 로드
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MYSQL_URL = os.getenv("MYSQL_URL", "mysql+pymysql://root:password@localhost:3306/chatbot_db")
-REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+MYSQL_URL = os.getenv("MYSQL_URL")
+REDIS_URL = os.getenv("REDIS_URL")
 
 if not OPENAI_API_KEY:
     raise RuntimeError("환경변수 OPENAI_API_KEY가 설정되어야 합니다")
