@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS users (
     name VARCHAR(50) NOT NULL COMMENT '사용자 이름',
     business_size VARCHAR(50) NOT NULL COMMENT '사업 규모 (예: 소상공인, 중소기업 등)',
     context_summary TEXT NULL COMMENT '누적된 대화의 요약 내용',
-    status_info TEXT NULL COMMENT '유저의 현재 상황 또는 대화 상태 정보',
     flag BOOLEAN NOT NULL DEFAULT FALSE COMMENT '범용 boolean',
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '레코드 생성 시각',
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '최근 수정 시각'
